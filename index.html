@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dogs pictures</title>
-  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="shortcut icon"
+    href="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-dog-dog-and-cat-justicon-flat-justicon.png"
+    alt="dog-icon" type="image/x-icon">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <script src="./src/scripts/main.js"></script>
 </head>
-<body> 
-  
+
+<body>
+  <section id="search" class="search">
+  <div id="searchContainer" class="search-container">
+      <select name="" id="selectBreed" class="search-container__select-breed"></select>
+  </div>
+</section>
+  <section id="display" class="display">
+  <div id="displayContainer" class="display-container">
+    <div class="display-container__breed-info">
+      <p class="display-container__breed-info--name" id="breedName"></p>  
+      <p class="display-container__breed-info--results" id="breedResults">
+        <span id="searchResult"></span>Resultados</p>
+    </div>
+    <div class="display-results" id="displayResults">
+
+    </div>
+  </div>
+</section>
+<footer class="footer">Coded by <a href="https://github.com/Odisseu93" target="_blank">Ulisses Slvério</a>.</footer>
 </body>
+
 </html>
