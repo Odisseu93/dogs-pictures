@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -19,24 +19,43 @@
 </head>
 
 <body>
-  <section id="search" class="search">
-  <div id="searchContainer" class="search-container">
-      <select name="" id="selectBreed" class="search-container__select-breed"></select>
-  </div>
-</section>
+  <header class="header">
+    <h1 class="header__logo">
+      <img src="./src/assets/img/logo.png" alt="Dog logo" class="header__logo__img">
+      <span class="header__logo__title">Dog pictures</span>
+    </h1>
+
+    <button class="header__btn" id="btn">
+      <h1 class="header__btn__img">
+        <img src="./src/assets/img/icon-hamburger.svg" alt="icon hambuger" id="iconHambuger"
+          class="header__btn__img--hamburger">
+        <!-- <img src="src\assets\img\icon-close.svg" alt="icon close" id="iconClose" class="header__btn__img--close"> -->
+      </h1>
+    </button>
+    <nav class="header__nav__container">
+      <ul class="header__nav__container__ul">
+        <li class="header__nav__container__ul__item">
+          <a href="./index.html" class="header__nav__container__ul__item__a">Inicio</a>
+        </li>
+        <li class="header__nav__container__ul__item">
+          <a href="#byBreed" class="header__nav__container__ul__item__a">Por Raça</a>
+        </li>
+        <li class="header__nav__container__ul__item">
+          <a href="listAllbreeds" class="header__nav__container__ul__item__a">Todas as Raças</a>
+        </li>
+        <li class="header__nav__container__ul__item">
+          <a href="listAllSubbreeds" class="header__nav__container__ul__item__a">Todas as Sub-raças</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <section id="display" class="display">
-  <div id="displayContainer" class="display-container">
-    <div class="display-container__breed-info">
-      <p class="display-container__breed-info--name" id="breedName"></p>  
-      <p class="display-container__breed-info--results" id="breedResults">
-        <span id="searchResult"></span>Resultados</p>
-    </div>
-    <div class="display-results" id="displayResults">
+    <div id="displayContainer" class="display-container">
 
     </div>
-  </div>
-</section>
-<footer class="footer">Coded by <a href="https://github.com/Odisseu93" target="_blank">Ulisses Slvério</a>.</footer>
+    </div>
+  </section>
+  <footer class="footer">Coded by <a href="https://github.com/Odisseu93" target="_blank">Ulisses Slvério</a>.</footer>
 </body>
 
 </html>
