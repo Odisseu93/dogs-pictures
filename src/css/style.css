@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap");
 /* Minimal CSS Reset */
 html {
   box-sizing: border-box;
@@ -23,6 +24,43 @@ img {
   height: auto;
 }
 
+button {
+  border: none;
+  background: none;
+}
+
 /* ------------------ */  
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.header__btn__img {
+  order: 0;
+  height: 30px;
+  width: 30px;
+}
+.header__logo {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+}
+.header__logo__img {
+  height: 80px;
+  width: 80px;
+  align-self: center;
+}
+.header__logo__title {
+  font-family: "DynaPuff", cursive;
+  font-weight: 700;
+  font-size: 0.8rem;
+  align-self: center;
+}
+
+.header__nav__container {
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */
