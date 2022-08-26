@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* Colors*/
 /* Minimal CSS Reset */
 html {
@@ -8,6 +8,10 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -21,7 +25,6 @@ ol, ul {
 }
 
 img {
-  max-width: 100%;
   height: auto;
 }
 
@@ -31,9 +34,18 @@ button {
 }
 
 /* ------------------ */  
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 20px;
+  background: linear-gradient(163.03deg, rgba(0, 0, 0, 0.96) 0.8%, #593924 13.99%, rgba(156, 121, 99, 0.94) 39.36%, rgba(150, 111, 86, 0.67155) 79.44%, #895737 82.99%, #000000 98.03%);
+}
+
 .header {
   display: flex;
+  margin: 0 30px;
   justify-content: space-between;
+  align-items: center;
   padding: 1.5rem;
 }
 .header__btn__img {
@@ -45,23 +57,70 @@ button {
   order: 1;
   display: flex;
   flex-direction: column;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
+  background: #FFF;
+  border-radius: 10px;
+  box-shadow: -12px 12px 4px rgba(0, 0, 0, 0.25);
 }
 .header__logo__img {
-  height: 80px;
-  width: 80px;
-  align-self: center;
-}
-.header__logo__title {
-  font-family: "DynaPuff", cursive;
-  font-weight: 700;
-  font-size: 0.8rem;
+  position: absolute;
+  height: 100px;
+  width: 100px;
   align-self: center;
 }
 
 .header__nav__container {
   display: none;
+}
+.header__btn--hamburger {
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.display-photos {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-items: center;
+}
+.display-photos__btn {
+  margin: 50px auto;
+  width: 200px;
+  height: 50px;
+  font-size: 21px;
+  font-weight: 700;
+  background: #028090;
+  box-shadow: -5px 18px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 83px;
+}
+.display-photos__container {
+  width: 287px;
+  height: 226px;
+  background: #DAB49D;
+  box-shadow: -12px 15px 4px rgba(0, 0, 0, 0.8);
+  border-radius: 27px;
+}
+
+.display-photos__btn:hover {
+  background: #02C39A;
+}
+
+.footer {
+  position: absolute;
+  width: 283px;
+  height: 29px;
+  left: 46px;
+  top: 649px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+.footer a {
+  text-decoration: none;
+  color: #02C39A;
 }
 
 /*# sourceMappingURL=style.css.map */

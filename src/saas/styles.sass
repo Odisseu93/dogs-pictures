@@ -7,6 +7,10 @@ html
 
 *, *:before, *:after 
   box-sizing: inherit
+
+*
+  font-family: variables.$font-body
+
   
 body, h1, h2, h3, h4, h5, h6, p, ol, ul 
   margin: 0
@@ -17,7 +21,7 @@ ol, ul
   list-style: none
 
 img 
-  max-width: 100%
+  // max-width: 100%
   height: auto
 
 button 
@@ -25,9 +29,18 @@ button
   background: none
 /* ------------------ */  
 
+
+body
+  width: 100vw
+  height: 100vh    
+  font-size: 20px
+  background: variables.$color-linear-body
+
 .header
   display: flex
+  margin: 0 30px
   justify-content: space-between
+  align-items: center
   padding: 1.5rem
 
   &__btn__img
@@ -40,21 +53,71 @@ button
     order: 1
     display: flex
     flex-direction: column
-    width: 100px
-    height: 100px
+    width: 80px
+    height: 80px
+    background: #FFF
+    border-radius: 10px
+    box-shadow: -12px 12px 4px rgba(0, 0, 0, 0.25)
     
     &__img
-      height: 80px  
-      width: 80px
+      position: absolute
+      height: 100px  
+      width: 100px
       align-self: center
-
-    &__title
-      font-family: variables.$logo-title-font
-      font-weight: 700  
-      font-size: 0.8rem
-      align-self: center
+      // border: 1px solid tomato
+      
      
+.header
+  
+  &__nav__container  
+    display: none   
 
-.header__nav__container  
-  display: none   
+  &__btn
+  
+    &--hamburger
+      margin: 0
+      padding: 0
+      width: 50px 
+      height: 50px
 
+.display-photos
+  display: flex
+  flex-flow: column wrap
+  align-items: center
+  justify-items: center
+ 
+
+  &__btn
+   margin: 50px auto
+   width: 200px
+   height: 50px
+   font-size: 21px
+   font-weight: 700
+   background: variables.$color-primary-btn
+   box-shadow: (-5px 18px 4px rgba(0, 0, 0, 0.5))
+   border-radius: 83px
+  
+  &__container
+   width: 287px
+   height: 226px
+   background: variables.$color-secundary
+   box-shadow: (-12px 15px 4px rgba(0, 0, 0, 0.8))
+   border-radius: 27px 
+
+.display-photos__btn:hover
+  background: variables.$color-hover-primary-btn    
+
+.footer
+  position: absolute
+  width: 283px
+  height: 29px
+  left: 46px
+  top: 649px
+  color: white
+  font-weight: 700
+  text-align: center
+
+  a
+    text-decoration: none
+    color: variables.$color-hover-primary-btn
+    
