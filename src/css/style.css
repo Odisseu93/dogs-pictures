@@ -97,6 +97,7 @@ body {
   border-radius: 83px;
 }
 .display-photos__container {
+  display: flex;
   width: 287px;
   height: 226px;
   background: #DAB49D;
@@ -106,6 +107,13 @@ body {
 
 .display-photos__btn:hover {
   background: #02C39A;
+}
+
+.display-photos__container img {
+  width: 80%;
+  height: 80%;
+  margin: 20px auto;
+  border-radius: 8px;
 }
 
 .footer {

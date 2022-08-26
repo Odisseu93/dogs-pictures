@@ -85,7 +85,6 @@ body
   flex-flow: column wrap
   align-items: center
   justify-items: center
- 
 
   &__btn
    margin: 50px auto
@@ -98,14 +97,22 @@ body
    border-radius: 83px
   
   &__container
+   display: flex 
    width: 287px
    height: 226px
    background: variables.$color-secundary
    box-shadow: (-12px 15px 4px rgba(0, 0, 0, 0.8))
    border-radius: 27px 
 
+
 .display-photos__btn:hover
   background: variables.$color-hover-primary-btn    
+
+.display-photos__container img
+    width: 80%
+    height: 80%
+    margin: 20px auto
+    border-radius: 8px
 
 .footer
   position: absolute
