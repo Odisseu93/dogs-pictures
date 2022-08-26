@@ -52,6 +52,7 @@ body {
   order: 0;
   height: 30px;
   width: 30px;
+  color: #000;
 }
 .header__logo {
   order: 1;
@@ -92,7 +93,8 @@ body {
   height: 50px;
   font-size: 21px;
   font-weight: 700;
-  background: #028090;
+  color: #0E185F;
+  background: #25A3B3;
   box-shadow: -5px 18px 4px rgba(0, 0, 0, 0.5);
   border-radius: 83px;
 }
@@ -106,7 +108,15 @@ body {
 }
 
 .display-photos__btn:hover {
-  background: #02C39A;
+  background: #14D5AC;
+  color: #244566;
+}
+
+.display-photos__btn:active {
+  background: #A3FFFF;
+  color: #244566;
+  transform: scale(1.1);
+  box-shadow: -1px 12px 23px #00FFC6;
 }
 
 .display-photos__container img {
@@ -130,7 +140,7 @@ body {
 }
 .footer a {
   text-decoration: none;
-  color: #02C39A;
+  color: #14D5AC;
 }
 
 /*# sourceMappingURL=style.css.map */

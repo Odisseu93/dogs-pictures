@@ -45,9 +45,9 @@ body
 
   &__btn__img
     order: 0
-    
     height: 30px
     width: 30px
+    color: #000
 
   &__logo
     order: 1
@@ -64,7 +64,6 @@ body
       height: 100px  
       width: 100px
       align-self: center
-      // border: 1px solid tomato
       
      
 .header
@@ -92,6 +91,7 @@ body
    height: 50px
    font-size: 21px
    font-weight: 700
+   color: variables.$font-btn-primary
    background: variables.$color-primary-btn
    box-shadow: (-5px 18px 4px rgba(0, 0, 0, 0.5))
    border-radius: 83px
@@ -106,7 +106,14 @@ body
 
 
 .display-photos__btn:hover
-  background: variables.$color-hover-primary-btn    
+  background: variables.$color-hover-btn   
+  color: variables.$font-btn-secundary 
+
+.display-photos__btn:active
+  background: variables.$color-active-btn
+  color: variables.$font-btn-secundary
+  transform: scale(1.1)
+  box-shadow: (-1px 12px 23px #00FFC6)
 
 .display-photos__container img
     width: 80%
@@ -128,5 +135,5 @@ body
 
   a
     text-decoration: none
-    color: variables.$color-hover-primary-btn
+    color: variables.$color-hover-btn
     
