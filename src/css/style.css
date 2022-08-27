@@ -97,6 +97,8 @@ body {
   background: #25A3B3;
   box-shadow: -5px 18px 4px rgba(0, 0, 0, 0.5);
   border-radius: 83px;
+  transition-timing-function: ease;
+  transition-duration: 2s;
 }
 .display-photos__container {
   display: flex;
@@ -105,11 +107,14 @@ body {
   background: #DAB49D;
   box-shadow: -12px 15px 4px rgba(0, 0, 0, 0.8);
   border-radius: 27px;
+  transition-timing-function: ease-out;
+  transition-duration: 2s;
 }
 
 .display-photos__btn:hover {
   background: #14D5AC;
   color: #244566;
+  transition-duration: 500ms;
 }
 
 .display-photos__btn:active {
@@ -117,6 +122,7 @@ body {
   color: #244566;
   transform: scale(1.1);
   box-shadow: -1px 12px 23px #00FFC6;
+  transition-duration: 80ms;
 }
 
 .display-photos__container img {

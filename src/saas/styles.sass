@@ -36,6 +36,7 @@ body
   font-size: 20px
   background: variables.$color-linear-body
 
+
 .header
   display: flex
   margin: 0 30px
@@ -69,7 +70,7 @@ body
 .header
   
   &__nav__container  
-    display: none   
+    display: none
 
   &__btn
   
@@ -85,6 +86,7 @@ body
   align-items: center
   justify-items: center
 
+
   &__btn
    margin: 50px auto
    width: 200px
@@ -95,7 +97,9 @@ body
    background: variables.$color-primary-btn
    box-shadow: (-5px 18px 4px rgba(0, 0, 0, 0.5))
    border-radius: 83px
-  
+   transition-timing-function: ease
+   transition-duration: 2s
+   
   &__container
    display: flex 
    width: 287px
@@ -103,17 +107,20 @@ body
    background: variables.$color-secundary
    box-shadow: (-12px 15px 4px rgba(0, 0, 0, 0.8))
    border-radius: 27px 
-
+   transition-timing-function: ease-out
+   transition-duration: 2s
 
 .display-photos__btn:hover
   background: variables.$color-hover-btn   
   color: variables.$font-btn-secundary 
+  transition-duration: 500ms
 
 .display-photos__btn:active
   background: variables.$color-active-btn
   color: variables.$font-btn-secundary
   transform: scale(1.1)
   box-shadow: (-1px 12px 23px #00FFC6)
+  transition-duration: 80ms
 
 .display-photos__container img
     width: 80%
@@ -137,3 +144,4 @@ body
     text-decoration: none
     color: variables.$color-hover-btn
     
+
