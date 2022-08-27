@@ -21,7 +21,6 @@ ol, ul
   list-style: none
 
 img 
-  // max-width: 100%
   height: auto
 
 button 
@@ -49,6 +48,8 @@ body
     height: 30px
     width: 30px
     color: #000
+    transition-duration: 500ms
+    
 
   &__logo
     order: 1
@@ -70,7 +71,29 @@ body
 .header
   
   &__nav__container  
-    display: none
+    display: none 
+    flex-flow: column wrap
+    align-items: center
+    position: absolute
+    left: -58px
+    top: 118px
+    width: 300px
+    height: 300px
+    background: variables.$color-secundary
+    opacity: 0.80
+    border-radius: 214px 214.5px 214px 214px 
+
+
+    &__ul
+      margin: auto auto auto 4em 
+      line-height: 3em
+
+      &__item
+
+        &__a
+          text-decoration: none
+          font-weight: 700
+          color: variables.$font-body-primary
 
   &__btn
   
@@ -127,6 +150,9 @@ body
     height: 80%
     margin: 20px auto
     border-radius: 8px
+
+.visible-nav
+  display: flex 
 
 .footer
   position: absolute

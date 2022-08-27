@@ -53,6 +53,7 @@ body {
   height: 30px;
   width: 30px;
   color: #000;
+  transition-duration: 500ms;
 }
 .header__logo {
   order: 1;
@@ -73,6 +74,25 @@ body {
 
 .header__nav__container {
   display: none;
+  flex-flow: column wrap;
+  align-items: center;
+  position: absolute;
+  left: -58px;
+  top: 118px;
+  width: 300px;
+  height: 300px;
+  background: #DAB49D;
+  opacity: 0.8;
+  border-radius: 214px 214.5px 214px 214px;
+}
+.header__nav__container__ul {
+  margin: auto auto auto 4em;
+  line-height: 3em;
+}
+.header__nav__container__ul__item__a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
 }
 .header__btn--hamburger {
   margin: 0;
@@ -130,6 +150,10 @@ body {
   height: 80%;
   margin: 20px auto;
   border-radius: 8px;
+}
+
+.visible-nav {
+  display: flex;
 }
 
 .footer {
