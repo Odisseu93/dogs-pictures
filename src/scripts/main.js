@@ -11,8 +11,8 @@ btnHamburger.addEventListener('click', () => {
 
 
 function mudarIcone() {
-  const iconHamburgerScr = './src/assets/img/icon-hamburger.svg';
-  const iconCloseSrc = './src/assets/img/icon-close.svg';
+  const iconHamburgerScr = '/src/assets/img/icon-hamburger.svg';
+  const iconCloseSrc = '/src/assets/img/icon-close.svg';
   const verificaSrcImg = new RegExp (iconHamburgerScr);
   
   if (verificaSrcImg.test(btnHamburger.src)) return btnHamburger.src = iconCloseSrc
