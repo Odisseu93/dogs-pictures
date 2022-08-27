@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dogs pictures - Por Raça</title>
+  <link rel="shortcut icon"
+    href="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-dog-dog-and-cat-justicon-flat-justicon.png"
+    alt="dog-icon" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+  <script src="../services/api/config/index.js" defer></script>
+  <script src="../scripts/main.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__logo">
+      <img src="../assets/img/logo.png" alt="Dog logo" class="header__logo__img">
+    </h1>
+    <h1 class="header__btn__img">
+      <img src="../assets/img/icon-hamburger.svg" alt="icon hamburger" role="button" id="iconHamburger"
+        class="header__btn--hamburger">
+    </h1>
+    <nav class="header__nav__container">
+      <ul class="header__nav__container__ul">
+        <li class="header__nav__container__ul__item">
+          <a href="/" class="header__nav__container__ul__item__a">Inicio</a>
+        </li>
+        <li class="header__nav__container__ul__item">
+          <a href="./byBreed.html" class="header__nav__container__ul__item__a">Por Raça</a>
+        </li>
+        <li class="header__nav__container__ul__item">
+          <a href="./listAllbreeds.html" class="header__nav__container__ul__item__a">Todas as Raças</a>
+        </li>
+        <li class="header__nav__container__ul__item">
+          <a href="./listAllSubbreeds.html" class="header__nav__container__ul__item__a">Todas as Sub-raças</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="em-desenvolvimento">
+    <h1><img src="http://img.shields.io/static/v1?label=&message=EM%20DESENVOLVIMENTO&color=red&style=for-the-badge" class="h1"/></h1>
+    <img src="/src/assets/img/em-desenvolvimento-img.jpg" alt="foto de cachorro vestindo uma roupa de construção civil" class="dog">
+  <style>
+    .em-desenvolvimento {
+      margin: 20px auto;
+      padding: 10px;
+      border-radius: 10px;
+      width: 80%;
+      height: 50%;
+      background: white;
+    }
+    
+    .em-desenvolvimento .dog {
+      margin: 0 auto;
+      width: 99.8%;
+      height: 80.8%;
+    }
+
+    .em-desenvolvimento .h1 {
+      margin: 0 auto;
+      width: 50%;
+    }
+
+    @media(min-width: 768px) {
+      .em-desenvolvimento {
+        width: 50%;
+        height: 55%;
+      }
+
+      .footer{
+        width: 100%;
+        position: static;
+        margin-top: 150px;
+
+      }
+    }
+  </style>  
+  </div>  
+  <footer class="footer">Coded by <a href="https://github.com/Odisseu93" target="_blank">
+      <p>Ulisses Silvério</p>
+    </a></footer>
+</body>
+
+</html>
