@@ -11,9 +11,9 @@ btnTrocar.addEventListener("click", () => {
 
 })
 
-window.onload(
+window.addEventListener('load', () => {
   get('/breeds/image/random')
     .then((response) => {
       PhotoContainer.innerHTML = `<img src=${response.data.message} alt="uma foto de cachorro">`
-    })
-)
+    });
+});
