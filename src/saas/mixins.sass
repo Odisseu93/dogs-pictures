@@ -1,14 +1,15 @@
-
+@use 'variables'
 
 /* https://davidwalsh.name/write-media-queries-sass */
-@mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-    @content;
-  }
-}
+  
+@mixin tablet 
+  @media (min-width: variables.$tablet-width) and (max-width: variables.$desktop-width - 1px) 
+    @content
+  
 
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
-}  
+
+@mixin desktop 
+  @media (min-width: variables.$desktop-width) 
+    @content
+  
+  
