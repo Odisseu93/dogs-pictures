@@ -182,9 +182,41 @@ body
   a
     text-decoration: none
     color: variables.$color-hover-btn
-    
 
+
+@include mixins.tablet
+
+  body
+    border: 1px solid tomato
+
+  .display-photos
+
+    &__container
+      width: 70%
+      min-height: 320px
+      max-height: 1920px
+
+      & img
+        width: 90%
+        height: 90%
+
+  .footer
+    bottom: 0
+    height: auto
+    top: auto
+    margin: 5px auto
+    width: 90%
+    
+    & a
+      color: variables.$font-btn-secundary
+      font-size: 1.15em
+      font-weigth: bold
+    
+    
 @include mixins.desktop
+
+  body
+    border: 1px solid red 
 
   .header 
     display: flex
@@ -195,10 +227,10 @@ body
     &__nav__container
       display: flex
       flex-direction: row
-      width: 900px
+      width: 70%
       height: 10px
       position: absolute
-      left: 262px
+      left: 50px
       top: 45px
       background: none
       border-radius: 0
@@ -208,9 +240,10 @@ body
         align-items: flex-start
 
         &__item
-          width: 221px
-          height: 30px  
-
+          padding: 10px
+          &:nth-child(-n+3)
+            margin-right: 5px
+            
           &__a
             font-weight: 700  
 
@@ -227,11 +260,12 @@ body
       display: none
     
   .display-photos  
-    height: 600px
+    height: 70%
 
     &__btn 
       order: 1
       cursor: pointer
+      margin: 30px auto 0 auto
 
     &::before
       position: absolute
@@ -244,7 +278,7 @@ body
 
     &__container
       width: 50%
-      height: 450px
+      height: 80%
 
       & img
         width: 90%
