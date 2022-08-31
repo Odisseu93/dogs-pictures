@@ -215,9 +215,6 @@ body {
   }
 }
 @media (min-width: 1024px) {
-  body {
-    border: 1px solid red;
-  }
   .header {
     display: flex;
     justify-content: right;
