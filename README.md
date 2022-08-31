@@ -2,8 +2,8 @@
 Uma página que busca imagens de cachorros (das mais variadas raças e tamanhos) através de uma API.
 
 <div align="center">
-<img src="https://i.imgur.com/T8kUjEW.png)" alt="imagem tela para mobile do porjeto" border="0" width=auto height=auto />
-<img src="https://i.imgur.com/MF2m5Fy.png" alt="imagem tela para desktop do porjeto" border="0" width=1280px height=720px />
+<img src="https://i.imgur.com/T8kUjEW.png)" alt="imagem tela para mobile do porjeto" border="0" width=15% height=40% />
+<img src="https://i.imgur.com/MF2m5Fy.png" alt="imagem tela para desktop do porjeto" border="0" width=80% height=60% />
 </div>
 
 ## <img src="http://img.shields.io/static/v1?label=status&message=EM%20DESENVOLVIMENTO&color=orange&style=for-the-badge"/>
