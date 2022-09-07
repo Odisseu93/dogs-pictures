@@ -3,7 +3,7 @@ const baseUrl = "https://dog.ceo/api";
 axios.defaults.baseURL = baseUrl /* Global axios defaults */
 
 
-async function get(url) {
+async function getPicturesSrc(url) {
 
   const Axiosinstance = axios;
   
