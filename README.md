@@ -28,6 +28,9 @@ Uma página que busca imagens de cachorros (das mais variadas raças e tamanhos)
 ## Design
 - ### [Figma](https://www.figma.com/file/l4pQQJx2Zv0Vz3VA0QM3ZO/Dog-Pictures?node-id=8%3A2) 
 
+## Estrutura de pastas
+![](https://i.imgur.com/Q7rO3Ze.png)
+
 ## Clone do repositório
 **no seu terminal digite:**
 ` git clone https://github.com/Odisseu93/buscador-de-cep `
